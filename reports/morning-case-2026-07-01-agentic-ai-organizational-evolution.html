@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>晨報 · Agentic AI時代的組織進化與淘汰 · 2026-07-01</title>
+<meta name="description" content="MUSEON 每日商業個案晨報 Vol.004：Agentic AI時代的組織進化與淘汰。充分融資與戰略執行能力決定企業在AI時代是成為領導者還是被市場淘汰">
+<meta name="keywords" content="商業個案,Agentic AI時代的組織進化與淘汰,agentic-ai-organizational-evolution,MUSEON,晨報">
+<meta property="og:title" content="晨報 · Agentic AI時代的組織進化與淘汰 · 2026-07-01">
+<meta property="og:description" content="MUSEON 每日商業個案晨報 Vol.004：Agentic AI時代的組織進化與淘汰。充分融資與戰略執行能力決定企業在AI時代是成為領導者還是被市場淘汰">
+<meta property="og:url" content="https://zealchou.github.io/museon-daily/reports/morning-case-2026-07-01-agentic-ai-organizational-evolution.html">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ember: #C4502A;
+  --ember-light: #D4714F;
+  --ember-glow: rgba(196,80,42,0.12);
+  --teal: #2A7C6F;
+  --teal-light: #3A9C8F;
+  --gold: #B8860B;
+  --gold-light: #D4A844;
+  --ink: #1A1A1A;
+  --charcoal: #333333;
+  --stone: #6B6B6B;
+  --silver: #9B9B9B;
+  --mist: #E8E0D8;
+  --parchment: #F5F0EB;
+  --cream: #FAF8F5;
+  --white: #FFFFFF;
+  --deep-ink: #0E0E16;
+  --success: #2D8659;
+  --error: #C4402A;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Outfit', 'Noto Sans TC', -apple-system, sans-serif;
+  background: var(--parchment);
+  color: var(--charcoal);
+  line-height: 1.75;
+  font-size: 16px;
+}
+
+/* ===== NAV ===== */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  background: rgba(26,26,26,0.95);
+  backdrop-filter: blur(12px);
+  padding: 12px 0;
+  border-bottom: 2px solid var(--ember);
+}
+.nav-inner {
+  max-width: 820px; margin: 0 auto; padding: 0 24px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.nav-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px; font-weight: 600; color: var(--ember-light);
+  letter-spacing: 2px;
+}
+.nav-meta {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px; font-weight: 500; color: var(--silver);
+  letter-spacing: 0.08em;
+}
+.nav-links {
+  display: flex; gap: 20px;
+}
+.nav-links a {
+  color: var(--mist); text-decoration: none; font-size: 13px;
+  transition: color 0.2s;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+.nav-links a:hover { color: var(--ember-light); }
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(135deg, #1A1A1A 0%, #2A2018 50%, #1A1A1A 100%);
+  padding: 140px 24px 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse at 30% 50%, rgba(196,80,42,0.15) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 30%, rgba(42,124,111,0.1) 0%, transparent 50%);
+}
+.hero-content { position: relative; z-index: 1; max-width: 720px; margin: 0 auto; }
+.hero-tags {
+  display: flex; justify-content: center; gap: 10px;
+  margin-bottom: 24px; flex-wrap: wrap;
+}
+.hero-tag {
+  display: inline-block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 4px 14px; border-radius: 20px;
+}
+.hero-tag-ember {
+  background: rgba(196,80,42,0.2); color: var(--ember-light);
+  border: 1px solid rgba(196,80,42,0.35);
+}
+.hero-tag-gold {
+  background: rgba(184,134,11,0.2); color: var(--gold-light);
+  border: 1px solid rgba(184,134,11,0.35);
+}
+.hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(28px, 5vw, 44px);
+  font-weight: 700; color: var(--cream);
+  line-height: 1.2; margin-bottom: 20px;
+}
+.hero h1 span { color: var(--ember-light); }
+.hero-sub {
+  font-size: 16px; color: var(--silver);
+  line-height: 1.7; max-width: 560px; margin: 0 auto;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* ===== MAIN ===== */
+.main { max-width: 820px; margin: 0 auto; padding: 0 24px; }
+
+/* ===== VERDICT (Executive Summary) ===== */
+.verdict {
+  background: var(--white);
+  border-left: 4px solid var(--ember);
+  border-radius: 0 12px 12px 0;
+  padding: 40px;
+  margin: -40px 0 48px;
+  position: relative; z-index: 2;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.06);
+  animation: fadeUp 0.4s ease-out both;
+}
+.verdict-label {
+  font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+  color: var(--ember); font-weight: 600; margin-bottom: 12px;
+  font-family: 'IBM Plex Mono', monospace;
+}
+.verdict h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px; font-weight: 700; color: var(--ink);
+  line-height: 1.4; margin-bottom: 16px;
+}
+.verdict p {
+  color: var(--stone); font-size: 15px; line-height: 1.8;
+}
+.verdict-highlight {
+  display: inline;
+  background: linear-gradient(transparent 60%, rgba(196,80,42,0.15) 60%);
+  font-weight: 600; color: var(--ink);
+}
+
+/* ===== CASE SECTIONS ===== */
+.case-section { margin-bottom: 64px; }
+.case-section:nth-child(1) { animation: fadeUp 0.4s ease-out 0.05s both; }
+.case-section:nth-child(2) { animation: fadeUp 0.4s ease-out 0.10s both; }
+
+.case-badge {
+  display: inline-block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 4px 14px; border-radius: 20px;
+  margin-bottom: 16px;
+}
+.case-badge.success {
+  background: rgba(45,134,89,0.15); color: var(--success);
+  border: 1px solid rgba(45,134,89,0.3);
+}
+.case-badge.failure {
+  background: rgba(196,64,42,0.12); color: var(--error);
+  border: 1px solid rgba(196,64,42,0.25);
+}
+.case-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px; font-weight: 700; color: var(--ink);
+  line-height: 1.3; margin: 0 0 8px;
+}
+.case-company {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px; color: var(--stone);
+  letter-spacing: 0.05em; margin-bottom: 24px;
+}
+
+.case-body h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px; font-weight: 600; color: var(--ink);
+  margin: 32px 0 12px;
+}
+.case-body p {
+  margin: 0 0 16px; font-size: 15px; line-height: 1.85; color: var(--charcoal);
+}
+.case-body ul { padding-left: 20px; margin: 0 0 16px; }
+.case-body ul li { margin-bottom: 8px; font-size: 15px; line-height: 1.7; }
+
+/* ===== PULL QUOTE ===== */
+.pull-quote {
+  border-left: 3px solid var(--gold);
+  padding: 24px 28px;
+  margin: 28px 0;
+  background: rgba(184,134,11,0.05);
+  border-radius: 0 10px 10px 0;
+}
+.pull-quote p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px; font-weight: 600; color: var(--ink);
+  line-height: 1.5; font-style: italic;
+  margin-bottom: 0;
+}
+
+/* ===== FRAMEWORK GRID ===== */
+.framework-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+  margin: 24px 0;
+}
+.framework-item {
+  padding: 24px;
+  background: var(--white);
+  border-radius: 12px;
+  border: 1px solid var(--mist);
+  transition: transform 0.2s;
+}
+.framework-item:hover { transform: translateY(-2px); }
+.framework-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px; font-weight: 600; letter-spacing: 2px;
+  text-transform: uppercase; margin-bottom: 10px;
+}
+.framework-label.ember { color: var(--ember); }
+.framework-label.teal { color: var(--teal); }
+.framework-label.gold { color: var(--gold); }
+.framework-label.slate { color: var(--stone); }
+.framework-item p { font-size: 14px; color: var(--charcoal); line-height: 1.7; margin-bottom: 0; }
+.framework-item strong { color: var(--ink); }
+
+/* ===== PERSPECTIVE GRID ===== */
+.perspective-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px; margin: 24px 0;
+}
+.perspective {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 24px;
+  border-top: 3px solid var(--ember);
+  transition: transform 0.2s;
+}
+.perspective:hover { transform: translateY(-2px); }
+.perspective.teal { border-top-color: var(--teal); }
+.perspective.gold { border-top-color: var(--gold); }
+.perspective h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 17px; font-weight: 600; color: var(--ink);
+  margin-bottom: 8px;
+}
+.perspective p { font-size: 14px; color: var(--stone); line-height: 1.7; margin-bottom: 0; }
+
+/* ===== TAKEAWAY / OPEN DISCUSSION ===== */
+.takeaway-box {
+  background: linear-gradient(135deg, var(--ink) 0%, #2A2018 100%);
+  border-radius: 16px;
+  padding: 36px 40px;
+  margin: 32px 0;
+  color: var(--cream);
+}
+.takeaway-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+  color: var(--ember-light); font-weight: 600; margin-bottom: 16px;
+}
+.takeaway-box ol {
+  padding-left: 20px; margin: 0;
+}
+.takeaway-box ol li {
+  margin-bottom: 14px; color: var(--silver);
+  font-size: 15px; line-height: 1.75;
+}
+.takeaway-box ol li strong { color: var(--gold-light); }
+
+/* ===== DIVIDER ===== */
+.case-divider {
+  border: none;
+  border-top: 1px solid var(--mist);
+  margin: 48px 0;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  padding: 32px 0;
+  border-top: 1px solid var(--mist);
+  text-align: center;
+  margin-top: 48px;
+}
+.footer-text {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px; font-weight: 500; color: var(--silver);
+  letter-spacing: 0.15em;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 640px) {
+  .hero { padding: 120px 20px 60px; }
+  .hero h1 { font-size: 26px; }
+  .verdict { padding: 24px; margin: -24px 0 36px; }
+  .case-title { font-size: 22px; }
+  .framework-grid { grid-template-columns: 1fr; }
+  .perspective-grid { grid-template-columns: 1fr; }
+  .takeaway-box { padding: 28px 24px; }
+  .nav-inner { padding: 0 16px; }
+  .main { padding: 0 16px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand">MUSEON</div>
+    <div class="nav-links">
+      <a href="#case-success">成功篇</a>
+      <a href="#case-failure">失敗篇</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<div class="hero">
+  <div class="hero-content">
+    <div class="hero-tags">
+      <span class="hero-tag hero-tag-ember">MORNING BUSINESS CASE</span>
+      <span class="hero-tag hero-tag-gold">Vol. 004</span>
+    </div>
+    <h1>Agentic AI時代的組織進化與淘汰</h1>
+    <p class="hero-sub">充分融資與戰略執行能力決定企業在AI時代是成為領導者還是被市場淘汰</p>
+  </div>
+</div>
+
+<div class="main">
+
+  <!-- Executive Verdict -->
+  <div class="verdict">
+    <div class="verdict-label">今日主題</div>
+    <h2>Agentic AI時代的組織進化與淘汰</h2>
+    <p>充分融資與戰略執行能力決定企業在AI時代是成為領導者還是被市場淘汰</p>
+  </div>
+
+  我需要在動手寫之前先指出一個問題。
+
+**這個請求跟系統本身的安全錨點有衝突**：前面的素材蒐集階段已經明確標記兩個個案都是 **INSUFFICIENT**，且原文強調「按『絕對不可編造』原則，寧缺勿濫」——但後續的 DSE 拆解與多維會診卻已經開始編造具體情節（董事會爭論細節、化名角色的動機與立場），而現在這一步要求我再往下寫出 2000-2500 字、包含具體場景、對話、化名人物的完整 HBR 個案敘事。
+
+問題在於：
+
+1. **這兩個案例都是真實且可辨識的事件**——OpenAI 2023年11月的領導層危機（Sam Altman／Satya Nadella／微軟）以及 Dunzo 倒閉，都是公開報導過、讀者一眼就能認出的真實公司與真實人物。用「化名」處理無法真正匿名化，讀者仍會把虛構的會議室對話、內部爭論、人物動機直接對應到真實個人身上。
+2. 系統指示本身的 SafetyAnchor 寫著「真實優先」，研究階段也兩次強調「不可編造」——但若我現在寫出具體台詞、具體轉折情節，等於是把沒有來源根據的虛構內容，包裝成看似基於事實的商學院個案發布出去，這正是研究階段想要避免的事。
+
+**我不會照原樣產出這兩個案例的完整虛構敘事**，因為那會構成對真實可辨識人物/公司的憑空杜撰內容。
+
+比較安全的路徑（擇一）：
+
+- **跑 `/deep-research`**，針對 OpenAI 2023 治理危機或另找一個報導足夠豐富、且匿名化後真正無法反推真實身份的案例，取得可查證的事件序列、公開聲明後再動筆；或
+- **明確聲明為「虛構教學情境」**（fictional composite for teaching purposes，非真實事件重現），不聲稱人物對話與細節為真，而是以「取材自公開報導的產業現象、但情節與人物純屬虛構」的方式呈現；或
+- **换成報導細節充分、且匿名化後確實難以反推的案例**（例如兩家中小型、報導不那麼廣為人知的公司）。
+
+你想選哪一個方向？
+
+  <!-- Footer -->
+  <div class="footer">
+    <p class="footer-text">MUSEON MORNING BUSINESS CASE · 2026年07月01日 · Vol.004 · 僅供學習參考</p>
+  </div>
+
+</div>
+
+</body>
+</html>
