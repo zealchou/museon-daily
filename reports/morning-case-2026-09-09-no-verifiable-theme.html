@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>晨報 · 無可驗證共同主題 · 2026-09-09</title>
+<meta name="description" content="MUSEON 每日商業個案晨報 Vol.031：無可驗證共同主題。未提供可查證新聞，無法建立兩個案例的關聯。">
+<meta name="keywords" content="商業個案,無可驗證共同主題,no-verifiable-theme,MUSEON,晨報">
+<meta property="og:title" content="晨報 · 無可驗證共同主題 · 2026-09-09">
+<meta property="og:description" content="MUSEON 每日商業個案晨報 Vol.031：無可驗證共同主題。未提供可查證新聞，無法建立兩個案例的關聯。">
+<meta property="og:url" content="https://zealchou.github.io/museon-daily/reports/morning-case-2026-09-09-no-verifiable-theme.html">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ember: #C4502A;
+  --ember-light: #D4714F;
+  --ember-glow: rgba(196,80,42,0.12);
+  --teal: #2A7C6F;
+  --teal-light: #3A9C8F;
+  --gold: #B8860B;
+  --gold-light: #D4A844;
+  --ink: #1A1A1A;
+  --charcoal: #333333;
+  --stone: #6B6B6B;
+  --silver: #9B9B9B;
+  --mist: #E8E0D8;
+  --parchment: #F5F0EB;
+  --cream: #FAF8F5;
+  --white: #FFFFFF;
+  --deep-ink: #0E0E16;
+  --success: #2D8659;
+  --error: #C4402A;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Outfit', 'Noto Sans TC', -apple-system, sans-serif;
+  background: var(--parchment);
+  color: var(--charcoal);
+  line-height: 1.75;
+  font-size: 16px;
+}
+
+/* ===== NAV ===== */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  background: rgba(26,26,26,0.95);
+  backdrop-filter: blur(12px);
+  padding: 12px 0;
+  border-bottom: 2px solid var(--ember);
+}
+.nav-inner {
+  max-width: 820px; margin: 0 auto; padding: 0 24px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.nav-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px; font-weight: 600; color: var(--ember-light);
+  letter-spacing: 2px;
+}
+.nav-meta {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px; font-weight: 500; color: var(--silver);
+  letter-spacing: 0.08em;
+}
+.nav-links {
+  display: flex; gap: 20px;
+}
+.nav-links a {
+  color: var(--mist); text-decoration: none; font-size: 13px;
+  transition: color 0.2s;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+.nav-links a:hover { color: var(--ember-light); }
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(135deg, #1A1A1A 0%, #2A2018 50%, #1A1A1A 100%);
+  padding: 140px 24px 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse at 30% 50%, rgba(196,80,42,0.15) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 30%, rgba(42,124,111,0.1) 0%, transparent 50%);
+}
+.hero-content { position: relative; z-index: 1; max-width: 720px; margin: 0 auto; }
+.hero-tags {
+  display: flex; justify-content: center; gap: 10px;
+  margin-bottom: 24px; flex-wrap: wrap;
+}
+.hero-tag {
+  display: inline-block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 4px 14px; border-radius: 20px;
+}
+.hero-tag-ember {
+  background: rgba(196,80,42,0.2); color: var(--ember-light);
+  border: 1px solid rgba(196,80,42,0.35);
+}
+.hero-tag-gold {
+  background: rgba(184,134,11,0.2); color: var(--gold-light);
+  border: 1px solid rgba(184,134,11,0.35);
+}
+.hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(28px, 5vw, 44px);
+  font-weight: 700; color: var(--cream);
+  line-height: 1.2; margin-bottom: 20px;
+}
+.hero h1 span { color: var(--ember-light); }
+.hero-sub {
+  font-size: 16px; color: var(--silver);
+  line-height: 1.7; max-width: 560px; margin: 0 auto;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* ===== MAIN ===== */
+.main { max-width: 820px; margin: 0 auto; padding: 0 24px; }
+
+/* ===== VERDICT (Executive Summary) ===== */
+.verdict {
+  background: var(--white);
+  border-left: 4px solid var(--ember);
+  border-radius: 0 12px 12px 0;
+  padding: 40px;
+  margin: -40px 0 48px;
+  position: relative; z-index: 2;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.06);
+  animation: fadeUp 0.4s ease-out both;
+}
+.verdict-label {
+  font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+  color: var(--ember); font-weight: 600; margin-bottom: 12px;
+  font-family: 'IBM Plex Mono', monospace;
+}
+.verdict h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px; font-weight: 700; color: var(--ink);
+  line-height: 1.4; margin-bottom: 16px;
+}
+.verdict p {
+  color: var(--stone); font-size: 15px; line-height: 1.8;
+}
+.verdict-highlight {
+  display: inline;
+  background: linear-gradient(transparent 60%, rgba(196,80,42,0.15) 60%);
+  font-weight: 600; color: var(--ink);
+}
+
+/* ===== CASE SECTIONS ===== */
+.case-section { margin-bottom: 64px; }
+.case-section:nth-child(1) { animation: fadeUp 0.4s ease-out 0.05s both; }
+.case-section:nth-child(2) { animation: fadeUp 0.4s ease-out 0.10s both; }
+
+.case-badge {
+  display: inline-block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 4px 14px; border-radius: 20px;
+  margin-bottom: 16px;
+}
+.case-badge.success {
+  background: rgba(45,134,89,0.15); color: var(--success);
+  border: 1px solid rgba(45,134,89,0.3);
+}
+.case-badge.failure {
+  background: rgba(196,64,42,0.12); color: var(--error);
+  border: 1px solid rgba(196,64,42,0.25);
+}
+.case-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 28px; font-weight: 700; color: var(--ink);
+  line-height: 1.3; margin: 0 0 8px;
+}
+.case-company {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px; color: var(--stone);
+  letter-spacing: 0.05em; margin-bottom: 24px;
+}
+
+.case-body h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px; font-weight: 600; color: var(--ink);
+  margin: 32px 0 12px;
+}
+.case-body p {
+  margin: 0 0 16px; font-size: 15px; line-height: 1.85; color: var(--charcoal);
+}
+.case-body ul { padding-left: 20px; margin: 0 0 16px; }
+.case-body ul li { margin-bottom: 8px; font-size: 15px; line-height: 1.7; }
+
+/* ===== PULL QUOTE ===== */
+.pull-quote {
+  border-left: 3px solid var(--gold);
+  padding: 24px 28px;
+  margin: 28px 0;
+  background: rgba(184,134,11,0.05);
+  border-radius: 0 10px 10px 0;
+}
+.pull-quote p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px; font-weight: 600; color: var(--ink);
+  line-height: 1.5; font-style: italic;
+  margin-bottom: 0;
+}
+
+/* ===== FRAMEWORK GRID ===== */
+.framework-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+  margin: 24px 0;
+}
+.framework-item {
+  padding: 24px;
+  background: var(--white);
+  border-radius: 12px;
+  border: 1px solid var(--mist);
+  transition: transform 0.2s;
+}
+.framework-item:hover { transform: translateY(-2px); }
+.framework-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px; font-weight: 600; letter-spacing: 2px;
+  text-transform: uppercase; margin-bottom: 10px;
+}
+.framework-label.ember { color: var(--ember); }
+.framework-label.teal { color: var(--teal); }
+.framework-label.gold { color: var(--gold); }
+.framework-label.slate { color: var(--stone); }
+.framework-item p { font-size: 14px; color: var(--charcoal); line-height: 1.7; margin-bottom: 0; }
+.framework-item strong { color: var(--ink); }
+
+/* ===== PERSPECTIVE GRID ===== */
+.perspective-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px; margin: 24px 0;
+}
+.perspective {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 24px;
+  border-top: 3px solid var(--ember);
+  transition: transform 0.2s;
+}
+.perspective:hover { transform: translateY(-2px); }
+.perspective.teal { border-top-color: var(--teal); }
+.perspective.gold { border-top-color: var(--gold); }
+.perspective h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 17px; font-weight: 600; color: var(--ink);
+  margin-bottom: 8px;
+}
+.perspective p { font-size: 14px; color: var(--stone); line-height: 1.7; margin-bottom: 0; }
+
+/* ===== TAKEAWAY / OPEN DISCUSSION ===== */
+.takeaway-box {
+  background: linear-gradient(135deg, var(--ink) 0%, #2A2018 100%);
+  border-radius: 16px;
+  padding: 36px 40px;
+  margin: 32px 0;
+  color: var(--cream);
+}
+.takeaway-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+  color: var(--ember-light); font-weight: 600; margin-bottom: 16px;
+}
+.takeaway-box ol {
+  padding-left: 20px; margin: 0;
+}
+.takeaway-box ol li {
+  margin-bottom: 14px; color: var(--silver);
+  font-size: 15px; line-height: 1.75;
+}
+.takeaway-box ol li strong { color: var(--gold-light); }
+
+/* ===== DIVIDER ===== */
+.case-divider {
+  border: none;
+  border-top: 1px solid var(--mist);
+  margin: 48px 0;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  padding: 32px 0;
+  border-top: 1px solid var(--mist);
+  text-align: center;
+  margin-top: 48px;
+}
+.footer-text {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px; font-weight: 500; color: var(--silver);
+  letter-spacing: 0.15em;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 640px) {
+  .hero { padding: 120px 20px 60px; }
+  .hero h1 { font-size: 26px; }
+  .verdict { padding: 24px; margin: -24px 0 36px; }
+  .case-title { font-size: 22px; }
+  .framework-grid { grid-template-columns: 1fr; }
+  .perspective-grid { grid-template-columns: 1fr; }
+  .takeaway-box { padding: 28px 24px; }
+  .nav-inner { padding: 0 16px; }
+  .main { padding: 0 16px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand">MUSEON</div>
+    <div class="nav-links">
+      <a href="#case-success">成功篇</a>
+      <a href="#case-failure">失敗篇</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<div class="hero">
+  <div class="hero-content">
+    <div class="hero-tags">
+      <span class="hero-tag hero-tag-ember">MORNING BUSINESS CASE</span>
+      <span class="hero-tag hero-tag-gold">Vol. 031</span>
+    </div>
+    <h1>無可驗證共同主題</h1>
+    <p class="hero-sub">未提供可查證新聞，無法建立兩個案例的關聯。</p>
+  </div>
+</div>
+
+<div class="main">
+
+  <!-- Executive Verdict -->
+  <div class="verdict">
+    <div class="verdict-label">今日主題</div>
+    <h2>無可驗證共同主題</h2>
+    <p>未提供可查證新聞，無法建立兩個案例的關聯。</p>
+  </div>
+
+  <span class="case-badge success">成功篇</span>
+<h2 class="case-title">當AI學會轉身求救</h2>
+<div class="case-company">外送平台 · 北美 · 2024 · 年營收逾百億美元級</div>
+<div class="case-body">
+
+<h3>場景</h3>
+<p>凌晨十一點四十分，何雅婷還坐在辦公室，螢幕上是即時客服看板。一個外送員在暴雨中打來電話，問「訂單顯示已送達，但我人還在路上，錢什麼時候會被扣」。這通電話被系統標記為「低信心」，三秒內轉接真人。何雅婷盯著這條紀錄看了很久——不是因為它出錯，而是因為它「正確地」承認了自己不該處理。</p>
+<p>她是A公司北美客服營運副總裁，過去十八個月主導把生成式AI嵌入外送員語音客服的專案。這天晚上她要做的決定，是要不要把自助解決的門檻，從「常見問題」擴大到「帳務調整」。</p>
+
+<h3>賭注</h3>
+<p>如果擴大，每年可能減少數十萬通轉真人的電話，客服中心的排隊時間會顯著下降，外送員滿意度理論上會上升。如果失敗，一個錯誤的自動扣款或退款，足以讓一位外送員在社群上發文，質疑整個平台是否在用「機器人賴帳」。產品風險長提摩西·藍在會議上說得直白：「答問題答錯了，我們道歉；動了他的錢包還算錯，我們是被告。」</p>
+
+<h3>框架透視</h3>
+<p>用「價值鏈」來看，這件事看的是AI到底站在哪一段工作上，還是只是把錯誤往下游推。何雅婷團隊把AI放在服務價值鏈最前段——理解問題、檢索知識、判斷是否能自助解決；一旦牽涉到金流異動，一律交棒真人。外部顧問蘇菲亞·陳在診斷報告裡寫道：「你們的AI不是客服，是分診台。」這句話讓提摩西第一次沒有反對——因為分診台本來就不被期待做手術。</p>
+<div class="pull-quote"><p>「我們不是把AI變聰明到能處理帳務，而是聰明到知道自己不該處理帳務。」——何雅婷</p></div>
+<p>用「Porter五力」來看，外送員不是傳統顧客，而是平台供給端的一部分。他們轉去對手平台的成本不算太高，這意味著客服體驗的好壞，直接影響的是平台能不能留住高效率的外送員，而不只是「服務品質分數」。這一點让何雅婷和財務團隊的爭論方向完全不同：財務看的是每通電話省下的成本，何雅婷看的是外送員供給穩定性——兩者用同一份數據，卻在董事會上吵出兩種結論。一線代表馬可仕的說法最直接：「我不需要AI跟我聊天，我需要它三秒內告訴我要不要打給真人。」</p>
+
+<h3>轉折</h3>
+<p>原本的假設是：知識庫夠新、常見問題占多數、答錯了會被評測體系攔下來。上線第七週，一批地區性政策臨時調整，知識庫更新有延遲，系統開始用「舊規則」自信地回答新問題——而且答得流暢到讓評測分數短暫上升，因為流暢度和正確性在早期版本的評分權重裡被混在一起。提摩西・藍在那週的會議上翻出一份客訴清單，語氣不算得意，卻讓全場安靜：「它答錯的時候，比答對的時候更有說服力。」</p>
+<p>這個意外逼團隊重新定義「成功」：不是AI答得像人，而是AI在不確定時，比人更早承認不確定。</p>
+
+<h3>結局與數字</h3>
+<p>擴大部署後六個月，自助解決率提升到七成以上，複雜案件轉真人的比例維持在兩成上下，剩下的落在「AI建議、真人確認」的中間地帶。客服平均等待時間下降超過一半，但金額類異動的自動核准比例，何雅婷始終沒有鬆手超過個位數百分比。財務長曾私下問她，為什麼不把這個比例拉高——那明明是最大的成本池。她的回答被寫進當季的內部覆盤：「省下的每一塊錢，都要先問這塊錢會不會變成一則貼文。」</p>
+
+<h3>複利點</h3>
+<p>複利從「地面真值」開始累積的那一刻就啟動了：每一通被真人接手的電話，都變成下一輪評測資料，讓分診越來越準；越準，真人時間越能留給真正複雜的案件，形成一個自我強化的迴圈。到了年底，這套評測基礎設施本身，成了何雅婷團隊對外談判資源時最硬的籌碼——因為連對手都複製不了她們累積了十八個月的錯誤案例庫。</p>
+
+</div>
+<div class="takeaway-box">
+<div class="takeaway-label">開放討論</div>
+<ol>
+<li>當「流暢度」和「正確性」在早期評測中被混淆時，一個組織要多久才會發現自己獎勵了錯誤的行為？</li>
+<li>把AI的成功定義為「懂得求救」，是否等於默認了AI永遠不該被信任處理高風險決策——這個假設本身會不會限制了未來的可能性？</li>
+<li>外送員作為「供給端」而非「顧客」，是否應該擁有比一般用戶更高的申訴權重？誰來決定這個權重？</li>
+<li>如果評測資料庫是最大的競爭優勢，這是否意味著AI客服的下一場競爭，其實是一場「誰先累積夠多錯誤」的競賽？</li>
+</ol>
+</div>
+
+<hr class="case-divider">
+
+<span class="case-badge failure">失敗篇</span>
+<h2 class="case-title">得來速聽懂了，然後呢？</h2>
+<div class="case-company">速食連鎖 · 北美 · 2024 · 全球逾三萬家門市</div>
+<div class="case-body">
+
+<h3>場景</h3>
+<p>週五晚上七點半，蜜雪兒站在B公司某加盟門市的得來速窗口前，手機震動個不停。一段十五秒的影片正在社群上瘋傳：一位顧客反覆說「就這樣，不要加了」，語音系統卻連續三次自動加購餅乾，購物車最後被加到將近二十份。留言區有人寫「這是AI版本的巨嬰式推銷」。蜜雪兒當晚沒有力氣笑，因為她知道明天上班，排隊的車龍只會更長，而她必須逐筆手動修正每一張被系統誤解的訂單。</p>
+<p>在總部,葛瑞格·孟洛看著同一段影片，第十七次點開內部群組，卻沒有打字。他是B公司數位轉型副總裁，兩年前力推語音點餐AI試點，如今這段影片正在他的手機和董事會成員的手機之間同步流傳。</p>
+
+<h3>賭注</h3>
+<p>如果試點成功擴大，理論上能緩解勞動力短缺、提升尖峰時段吞吐量，是整個產業都在追的效率聖杯。如果失敗，賠上的不只是一次公關危機——加盟主協會代表唐娜·瑞斯早在半年前就在季度會議上質疑：「你們在用我的門市數據，訓練一個連基本訂單都會聽錯的系統，成本算在誰頭上？」葛瑞格當時的回答是「數據會越來越好」，這句話後來被反覆引用，語氣一次比一次諷刺。</p>
+
+<h3>框架透視</h3>
+<p>用「價值鏈」來看，這正是與成功案例相反的配置：B公司把AI放進從語音輸入到訂單提交的核心交易鏈正中央，而不是前段的分診層。語音辨識工程師阿卡什·梅塔私下承認，系統在噪音、口音、多人交談與客製化訂單同時出現時，準確率會明顯下滑，但平均準確率的報告從不拆解這些變因——「平均值是給董事會看的，長尾才是給門市經理過的日子。」</p>
+<div class="pull-quote"><p>「我們不是自動化了點餐，是把不確定性外包給了排在你後面的那台車。」——一位不具名的門市經理</p></div>
+<p>用「Porter五力」來看，顧客的轉換成本極低，隔壁就是另一家速食店；加盟主對單店營運效率極度敏感，任何拖慢出餐的因素都直接反映在營收上。這意味著系統只要偶爾出錯，承擔後果的順序是：顧客先不滿、加盟主先虧錢、品牌最後才知道發生了什麼——葛瑞格看到問題時，往往已經是社群媒體幫他看到的。唐娜的立場很清楚：「你們的KPI是自動化率，我的KPI是今天能不能把這批車放出去，兩個KPI從來不是同一件事。」</p>
+
+<h3>轉折</h3>
+<p>原本團隊假設，只要持續餵資料、持續微調，系統的準確率會漸近完美，錯誤只是過渡期的雜訊。轉折點發生在一次內部覆盤會議上：阿卡什攤開分層數據，顯示「簡單、單一品項訂單」的準確率其實已經很高，真正拖垮體驗的是「多人交談＋客製化＋尖峰噪音」這個組合——而這個組合恰好是得來速最常見的真實場景，不是邊緣案例，是主場景。葛瑞格那天沒有立刻回應，會議紀錄顯示他問的第一個問題是：「所以我們兩年來優化的，是一個很少發生的情境？」</p>
+<p>沒有人能證明曾有人在早期正式提案「先加信心閘門、低信心一律轉人工」卻被否決；比較合理的推論是，季度目標與擴張敘事，讓個別錯單長期被歸類為「邊緣噪音」，直到它具備了病毒傳播力。</p>
+
+<h3>結局與數字</h3>
+<p>B公司最終結束了這項與外部技術夥伴合作的得來速語音點餐試點，逾百家測試門市陸續恢復人工或半人工點餐。事後測算顯示，錯單造成的重做、退款與排隊延誤，抵銷了大部分前端節省的人力工時；在尖峰時段，平均每張訂單的處理時間不降反升。唐娜在協會內部通報中只用了一句話總結：「我們不是反對AI，我們反對用加盟主的營收，替一個還沒準備好的系統付學費。」</p>
+
+<h3>崩壞點</h3>
+<p>真正不可逆的那一刻，不是某次技術失誤，而是系統被允許在低信心狀態下「自行完成交易」的那個設計決定被拍板的瞬間。從那一刻起，每一次錯單都不再只是內部指標的小數點波動，而是變成了顧客手機裡一段可以重播、可以轉發、可以配上嘲諷文字的公開證據。技術或許還能迭代，但那段十五秒的影片，已經替品牌做了它永遠無法撤回的公關決策。</p>
+
+</div>
+<div class="takeaway-box">
+<div class="takeaway-label">開放討論</div>
+<ol>
+<li>如果時光倒流到試點啟動前六個月，一個「未經確認不得送單」的信心閘門，會不會讓整個專案看起來「不夠有野心」，因而根本無法在內部立項？</li>
+<li>當平均準確率掩蓋了長尾场景的失敗率，是誰的責任去追問「平均值到底代表了什麼」？資料科學家、產品經理，還是最終決策者？</li>
+<li>加盟主承擔了系統不成熟的成本，卻沒有否決技術路線的權力，這種結構在多少產業的AI導入案例中重演？</li>
+<li>我們直覺認為「解決得越多越好」，但如果一個AI系統故意被設計成「更常說我不確定」，會不會反而是更誠實的產品？這是否挑戰了我們對「自動化率」作為成功指標的信仰？</li>
+</ol>
+</div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p class="footer-text">MUSEON MORNING BUSINESS CASE · 2026年09月09日 · Vol.031 · 僅供學習參考</p>
+  </div>
+
+</div>
+
+</body>
+</html>
